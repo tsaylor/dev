@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Login</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Tim Saylor" />
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <script>
+      window.addEventListener("load", () => {
+        const form = document.forms.login;
+        form.addEventListener("submit", handleLogin);
+      });
+    </script>
+  </head>
+  <body id="loginPage">
+    <form name="login" method="POST">
+      <p>
+        <label for="username">
+          Username: <input type="text" id="username" name="username" />
+        </label>
+      </p>
+      <p>
+      <label for="password">
+        Password: <input type="password" id="password" name="password" />
+      </label>
+      </p>
+      <p style="float: right;">
+        <input type="submit" value="Log in" />
+      </p>
+    </form>
+  </body>
+</html>
